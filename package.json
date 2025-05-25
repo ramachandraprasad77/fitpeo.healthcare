@@ -1,8 +1,20 @@
 {
   "name": "healthcare-dashboard",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "<<<<<<< HEAD\r # fitpeo.healthcare\r =======\r # React + Vite",
+  "homepage": "https://github.com/ramachandraprasad77/fitpeo.healthcare#readme",
+  "bugs": {
+    "url": "https://github.com/ramachandraprasad77/fitpeo.healthcare/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramachandraprasad77/fitpeo.healthcare.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
