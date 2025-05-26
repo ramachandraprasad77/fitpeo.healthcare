@@ -26,12 +26,14 @@ const Sidebar = () => {
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-4 left-4 z-50 text-2xl text-blue-700"
-      >
-        <FaBars />
-      </button>
+      {!isOpen && ( // Show button only when sidebar is closed
+        <button
+          onClick={() => setIsOpen(true)}
+          className="md:hidden fixed top-24 left-4 z-[9999] text-2xl text-blue-300"
+        >
+          <FaBars />
+        </button>
+      )}
 
       {isOpen && (
         <div
