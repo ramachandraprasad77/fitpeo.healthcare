@@ -1,7 +1,6 @@
 import React from "react";
 import { FaLungs, FaTooth, FaBone } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
-import anatomyImg from "../assets/anatomy.png";
 
 const healthData = [
   { type: "Lungs", status: "Good", date: "26 Oct 2021", level: 60 },
