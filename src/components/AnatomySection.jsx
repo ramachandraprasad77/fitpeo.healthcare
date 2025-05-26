@@ -14,8 +14,8 @@ const AnatomySection = () => {
       <div className="flex justify-end items-center mb-6">
         <div className="text-blue-700 font-medium">This Week</div>
       </div>
-      <div className="flex flex-row gap-1">
-        <div className="relative flex-1 bg-white rounded-xl p-6 flex justify-center items-center">
+      <div className="flex flex-row gap-4">
+        <div className="relative flex-1 bg-white rounded-xl p-4 flex justify-center items-center">
           <img
             src="/anatomy.png"
             alt="Anatomy"
