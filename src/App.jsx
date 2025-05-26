@@ -12,7 +12,7 @@ const App = () => {
     <div className="bg-white min-h-screen relative">
       <button
         onClick={() => setSidebarOpen(!sidebarOpen)}
-        className="md:hidden fixed top-4 left-2 z-50 text-3xl text-blue-100"
+        className="md:hidden fixed top-4 left-2 z-50 text-3xl text-blue-950"
       >
         ☰
       </button>
