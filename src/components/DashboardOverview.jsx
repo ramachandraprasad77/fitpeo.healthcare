@@ -7,7 +7,7 @@ import ActivityFeed from "./ActivityFeed";
 
 const DashboardOverview = () => {
   return (
-    <div><h1 className="text-[#1a185a] text-2xl font-bold"> Dashboard</h1>
+    <div><h1 className="text-[#272487] text-2xl font-bold"> Dashboard</h1>
     <div className="bg-white flex flex-col md:flex-row gap-2 mt-2">
       <div className="md:w-1/2 flex flex-col gap-2 items-center">
         <AnatomySection />
