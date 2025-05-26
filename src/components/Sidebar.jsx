@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  FaBars,
   FaThLarge,
   FaHistory,
   FaCalendarAlt,
@@ -11,9 +10,7 @@ import {
   FaCog,
 } from "react-icons/fa";
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const Sidebar = ({ isOpen, setIsOpen }) => {
   const navItems = [
     { label: "Dashboard", icon: <FaThLarge />, section: "General", active: true },
     { label: "History", icon: <FaHistory />, section: "General" },
@@ -26,22 +23,15 @@ const Sidebar = () => {
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-4 left-4 z-50 text-2xl text-blue-700"
-      >
-        <FaBars />
-      </button>
-
       {isOpen && (
         <div
           onClick={() => setIsOpen(false)}
           className="fixed inset-0 bg-black bg-opacity-30 z-40 md:hidden"
-        ></div>
+        />
       )}
 
       <div
-        className={`fixed top-0 left-0 h-screen w-40 bg-white shadow-md z-50 pt-20 px-4 transition-transform duration-300 ease-in-out
+        className={`fixed top-0 left-0 h-screen w-60 bg-white shadow-md z-50 pt-20 px-4 transition-transform duration-300 ease-in-out
         ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 md:block`}
       >
         <div>
