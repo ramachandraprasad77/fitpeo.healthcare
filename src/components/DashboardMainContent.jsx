@@ -3,7 +3,7 @@ import DashboardOverview from "./DashboardOverview";
 
 const DashboardMainContent = () => {
   return (
-    <div className="flex flex-col flex-grow bg-gray-100 p-6">
+    <div className="flex flex-col flex-grow bg-white p-105">
       <DashboardOverview />
     </div>
   );

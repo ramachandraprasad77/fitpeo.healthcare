@@ -10,7 +10,7 @@ const healthData = [
 
 const AnatomySection = () => {
   return (
-    <div className="flex flex-col p-6 bg-white rounded-2xl shadow-md max-w-6xl mx-auto">
+    <div className="flex flex-col p-5 bg-white rounded-2xl shadow-md max-w-6xl mx-auto">
       <div className="flex justify-end items-center mb-6">
         <div className="text-blue-700 font-medium">This Week</div>
       </div>
@@ -19,13 +19,13 @@ const AnatomySection = () => {
           <img
             src="/src/assets/anatomy.png"
             alt="Anatomy"
-            className="w-auto min-w-[100px] max-w-[250px] object-contain"
+            className="w-auto min-w-[80px] max-w-[200px] object-contain"
           />
 
-          <div className="absolute top-[18%] right-[2%] bg-indigo-600 text-white px-2 py-1 rounded-md flex items-center gap-1 shadow-md text-xs sm:text-sm w-max">
+          <div className="absolute top-[25%] right-[2%] bg-indigo-600 text-white px-1 py-1 rounded-md flex items-center gap-1 shadow-md text-xs sm:text-sm w-max">
             <FaHeart className="text-xs sm:text-sm" /> Healthy Heart
           </div>
-          <div className="absolute bottom-[28%] left-[2%] bg-cyan-400 text-white px-2 py-1 rounded-md flex items-center gap-1 shadow-md text-xs sm:text-sm w-max">
+          <div className="absolute bottom-[28%] left-[2%] bg-cyan-400 text-white px-1 py-1 rounded-md flex items-center gap-1 shadow-md text-xs sm:text-sm w-max">
             💪 Healthy Leg
           </div>
         </div>

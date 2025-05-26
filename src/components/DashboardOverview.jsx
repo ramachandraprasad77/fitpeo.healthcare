@@ -7,15 +7,16 @@ import ActivityFeed from "./ActivityFeed";
 
 const DashboardOverview = () => {
   return (
-    <div className=" bg-white flex">
-      <div className="w-1/2 flex mt-2 gap-1 flex-col items-center bg-white">
+    <div><h1 className="text-[#1a185a] text-2xl font-bold"> Dashboard</h1>
+    <div className="bg-white flex flex-col md:flex-row gap-2 mt-2">
+      <div className="md:w-1/2 flex flex-col gap-2 items-center">
         <AnatomySection />
-        <div className="w-full mt-2 bg-white  rounded-md">
+        <div className="w-full">
           <ActivityFeed />
         </div>
       </div>
 
-      <div className="flex flex-col gap-1 w-1/2 bg-white">
+      <div className="md:w-1/2 flex flex-col gap-2">
         <div className="bg-gray-200 rounded-md">
           <CalendarView />
         </div>
@@ -23,6 +24,7 @@ const DashboardOverview = () => {
           <UpcomingSchedule />
         </div>
       </div>
+    </div>
     </div>
   );
 };

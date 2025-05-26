@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import DashboardMainContent from "./components/DashboardMainContent";
 import "./styles/global.css";
-const App = () => {
-  return (
-    <div className="bg-gray-100 h-screen overflow-hidden">
-      <Sidebar />
-      <Header />
 
-      <div className="pt-20 pl-60 h-full overflow-auto">
+const App = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  return (
+    <div className="bg-white min-h-screen relative">
+      <button
+        onClick={() => setSidebarOpen(!sidebarOpen)}
+        className="md:hidden fixed top-4 left-2 z-50 text-3xl text-blue-100"
+      >
+        ☰
+      </button>
+
+      <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
+
+      <div className="pl-0 md:pl-60">
+        <Header />
+      </div>
+
+      <div
+        className={`pt-20 transition-all duration-300 ${
+          sidebarOpen ? "pl-0" : "pl-0 md:pl-44"
+        }`}
+      >
         <DashboardMainContent />
       </div>
     </div>
