@@ -17,7 +17,7 @@ const AnatomySection = () => {
       <div className="flex flex-row gap-1">
         <div className="relative flex-1 bg-white rounded-xl p-6 flex justify-center items-center">
           <img
-            src="/src/assets/anatomy.png"
+            src="/anatomy.png"
             alt="Anatomy"
             className="w-auto min-w-[80px] max-w-[200px] object-contain"
           />

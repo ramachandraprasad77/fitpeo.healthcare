@@ -25,7 +25,7 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-2">
           <img
-            src="/src/assets/avatar.png"
+            src="/avatar.png"
             alt="User"
             className="rounded-full w-8 h-8 object-cover"
           />

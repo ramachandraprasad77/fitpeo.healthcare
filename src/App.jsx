@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import DashboardMainContent from "./components/DashboardMainContent";
 import "./styles/global.css";
+import { FaBars } from "react-icons/fa";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
