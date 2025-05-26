@@ -26,7 +26,7 @@ const Sidebar = () => {
 
   return (
     <>
-      {!isOpen && ( // Show button only when sidebar is closed
+      {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
           className="md:hidden fixed top-24 left-4 z-[9999] text-2xl text-blue-300"
